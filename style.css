@@ -1,0 +1,98 @@
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #732d2d;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.countdown, .message-board, .keyword-chat {
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #732d2d;
+    border-radius: 10px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+button {
+    background: #732d2d;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5a1d1d;
+}
+
+ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* 互动统计板样式（放回页面下方，并调整宽度匹配上方板块） */
+#keywordStats {
+    margin-top: 20px;
+    padding: 10px;
+    border: 6px double #732d2d; /* 使用双线边框增加装饰感 */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 300px; /* 调整为与上方板块完全一致的宽度 */
+    max-width: 300px;
+    text-align: left;
+    color: #732d2d;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    bottom: 0;
+}
+
+
+#keywordStats h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#keywordStats p {
+    margin: 5px 0;
+    padding-left: 10px;
+    text-align: left;
+}
+/* 按钮回应文本的样式（添加底色和样式优化） */
+#keywordResponse {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8); /* 添加浅色背景 */
+    border: 2px solid #732d2d;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #732d2d;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+@font-face {
+    font-family: 'Pacifico';
+    src: url('fonts/Pacifico-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    color: #4a2c2c;
+    line-height: 1.6;
+}
+

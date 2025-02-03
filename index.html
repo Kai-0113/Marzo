@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我们的秘密基地</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+    <h1>我说过的，你一定会找到我的。</h1>
+
+    <!-- 倒计时 -->
+    <div class="countdown">
+        <p>距离再见面，还有：</p>
+        <h2 id="daysLeft">-- 天</h2>
+        <input type="date" id="returnDate">
+        <button onclick="updateCountdown()">设定日期</button>
+    </div>
+
+    <!-- 留言板 -->
+    <div class="message-board">
+        <h2>留言板</h2>
+        <textarea id="messageInput" placeholder="写下你的留言..."></textarea>
+        <button onclick="saveMessage()">提交</button>
+        <ul id="messageList"></ul>
+    </div>
+
+<div id="keywordStats"></div>
+
+<div class="keyword-buttons">
+    <button onclick="triggerResponse('亲亲')">亲亲</button>
+    <button onclick="triggerResponse('抱抱')">抱抱</button>
+    <button onclick="triggerResponse('想你')">想你</button>
+    <button onclick="triggerResponse('喜欢你')">喜欢你</button>
+</div>
+<p id="keywordResponse"></p>
+
+   </body>
+</html>
